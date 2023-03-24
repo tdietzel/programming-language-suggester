@@ -18,7 +18,7 @@ function calcLanguage (event) {
 
   // sets default values
   const point = 1;
-  let javaScript = 0;
+  let javaScript = 1;
   let python = 0;
   let cSharp = 0;
 
@@ -68,11 +68,11 @@ function calcLanguage (event) {
   }
   if (fifthChoice5A & fifthChoice5B & fifthChoice5C) {
     // Question 5: Checks which choice got selected
-    if (document.getElementById('fifthChoiceA').checked === true) {
+    if (document.getElementById('fifthChoiceA').checked == true) {
       javaScript = addJava(javaScript, point);
-    } else if (document.getElementById('fifthChoiceB').checked === true) {
+    } else if (document.getElementById('fifthChoiceB').checked == true) {
       python = addPython(python, point);
-    } else if (document.getElementById('fifthChoiceC').checked === true) {
+    } else if (document.getElementById('fifthChoiceC').checked == true) {
       cSharp = addCSharp(cSharp, point);
     }
     return [javaScript, python, cSharp];
@@ -80,7 +80,7 @@ function calcLanguage (event) {
   if (javaScript & python & cSharp) {
     // decides which option is best for user
     if (javaScript > python && javaScript > cSharp) {
-        document.getElementById("answer").innerText = "JavaScript";
+      alert("JavaScript");
     } else if(javaScript > python && javaScript === cSharp) {
         document.getElementById("answer").innerText = "JavaScript";
     } else if(javaScript > cSharp && javaScript === python) {

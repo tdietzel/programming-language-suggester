@@ -22,7 +22,7 @@ _This webpage practices using HTML, CSS & JavaScript to create a webpage that ca
 
 ## Known Bugs
 
-* _None found currently_
+* _Cant get values of variables to change. Currently not functional._
 
 ## License
 
