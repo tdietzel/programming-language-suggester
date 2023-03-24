@@ -4,15 +4,14 @@ window.addEventListener("load", function() {
 })
 function calcLanguage (event) {
   event.preventDefault();
-  let javaScript = 1;
-  let python = 1;
-  let cSharp = 1;
-  let result = " ";
-
+  let javaScript = 0;
+  let python = 0;
+  let cSharp = 0;
+  let result = "x";
     // Question 1: Checks which choice got selected
-  if (firstChoiceA & firstChoiceB & firstChoiceC) {
+  if (firstChoiceA & firstChoiceB & firstChoiceC & javaScript & python & cSharp) {
     if (document.getElementById('firstChoiceA').checked === true) {
-        javaScript = javaScript += 1;
+        return javaScript += 1
     } else if (document.getElementById('firstChoiceB').checked === true) {
         python = python + 1;
     } else if (document.getElementById('firstChoiceC').checked === true) {
@@ -70,6 +69,10 @@ function calcLanguage (event) {
     }
   }
   document.getElementById("answer").innerText= result;
+}
+
+function calcJava(event) {
+
 }
 
 //const firstChoiceA = window.document.querySelector("input#firstChoiceA").value;
