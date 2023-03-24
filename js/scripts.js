@@ -6,6 +6,12 @@ window.addEventListener("load", function() {
 function addJava(javaScript, point) {
   return javaScript + point;
   }
+function addPython(python, point) {
+  return python + point;
+  }
+function addCSharp(cSharp, point) {
+  return cSharp + point;
+  }
 function calcLanguage (event) {
   event.preventDefault();
 const point = 1;
@@ -15,55 +21,59 @@ let cSharp = 0;
     // Question 1: Checks which choice got selected
   if (firstChoiceA & firstChoiceB & firstChoiceC & javaScript & python & cSharp) {
     if (document.getElementById('firstChoiceA').checked === true) {
-        javaScript = addJava(javaScript, point);
+      javaScript = addJava(javaScript, point);
     } else if (document.getElementById('firstChoiceB').checked === true) {
-        answer = addJava(answer, point);
+      python = addPython(python, point);
     } else if (document.getElementById('firstChoiceC').checked === true) {
-        answer = addJava(answer, point);
+      cSharp = addCSharp(cSharp, point);
     }
+    return [javaScript, python, cSharp];
   }
   if (secondChoiceA & secondChoiceB & secondChoiceC) {
       // Question 2: Checks which choice got selected
     if (document.getElementById('secondChoiceA').checked === true) {
-        javaScript = javaScript + 1
+      javaScript = addJava(javaScript, point);
     } else if (document.getElementById('secondChoiceB').checked === true) {
-        python = 1;
+      python = addPython(python, point);
     } else if (document.getElementById('secondChoiceC').checked === true) {
-        cSharp = 1;
+      cSharp = addCSharp(cSharp, point);
     }
+    return [javaScript, python, cSharp];
   }
   if (thirdChoiceA & thirdChoiceB & thirdChoiceC) {
       // Question 3: Checks which choice got selected
     if (document.getElementById('thirdChoiceA').checked === true) {
-        javaScript = javaScript + 1
+      javaScript = addJava(javaScript, point);
     } else if (document.getElementById('thirdChoiceB').checked === true) {
-        python = 1;
+      python = addPython(python, point);
     } else if (document.getElementById('thirdChoiceC').checked === true) {
-        cSharp = 1;
+      cSharp = addCSharp(cSharp, point);
     }
+    return [javaScript, python, cSharp];
   }
   if (fourthChoiceA & fourthChoiceB & fourthChoiceC) {
       // Question 4: Checks which choice got selected
     if (document.getElementById('fourthChoiceA').checked === true) {
-        javaScript = javaScript + 1
+      javaScript = addJava(javaScript, point);
     } else if (document.getElementById('fourthChoiceB').checked === true) {
-        python = 1;
+      python = addPython(python, point);
     } else if (document.getElementById('fourthChoiceC').checked === true) {
-        cSharp = 1;
+      cSharp = addCSharp(cSharp, point);
     }
+    return [javaScript, python, cSharp];
   }
   if (fifthChoice5A & fifthChoice5B & fifthChoice5C) {
       // Question 5: Checks which choice got selected
     if (document.getElementById('fifthChoiceA').checked === true) {
-        javaScript = javaScript + 1
+      javaScript = addJava(javaScript, point);
     } else if (document.getElementById('fifthChoiceB').checked === true) {
-        python = 1;
+      python = addPython(python, point);
     } else if (document.getElementById('fifthChoiceC').checked === true) {
-        cSharp = 1;
+      cSharp = addCSharp(cSharp, point);
     }
+    return [javaScript, python, cSharp];
     }
-
-    // decides which option is best for user
+      // decides which option is best for user
   if (javaScript & python & cSharp) {
     if (javaScript > python && javaScript > cSharp) {
         document.getElementById("answer").innerText = "JavaScript";
