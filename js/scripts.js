@@ -4,19 +4,19 @@ window.addEventListener("load", function() {
 })
 function calcLanguage (event) {
   event.preventDefault();
-  let python = 0;
-  let cSharp = 0;
-  let result = "";
-  
+  let javaScript = 1;
+  let python = 1;
+  let cSharp = 1;
+  let result = " ";
+
     // Question 1: Checks which choice got selected
   if (firstChoiceA & firstChoiceB & firstChoiceC) {
     if (document.getElementById('firstChoiceA').checked === true) {
-        let javaScript = 1;
-        console.log(javaScript);
+        javaScript = javaScript += 1;
     } else if (document.getElementById('firstChoiceB').checked === true) {
-        python = 1;
+        python = python + 1;
     } else if (document.getElementById('firstChoiceC').checked === true) {
-        cSharp = 1;
+        cSharp = cSharp + 1;
     }
   }
   if (secondChoiceA & secondChoiceB & secondChoiceC) {
