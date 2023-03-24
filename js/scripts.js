@@ -12,13 +12,17 @@ function addPython(python, point) {
 function addCSharp(cSharp, point) {
   return cSharp + point;
   }
+// 
 function calcLanguage (event) {
   event.preventDefault();
-const point = 1;
-let javaScript = 1;
-let python = 0;
-let cSharp = 0;
-    // Question 1: Checks which choice got selected
+
+  // sets default values
+  const point = 1;
+  let javaScript = 0;
+  let python = 0;
+  let cSharp = 0;
+
+  // Question 1: Checks which choice got selected
   if (firstChoiceA & firstChoiceB & firstChoiceC & javaScript & python & cSharp) {
     if (document.getElementById('firstChoiceA').checked === true) {
       javaScript = addJava(javaScript, point);
@@ -30,7 +34,7 @@ let cSharp = 0;
     return [javaScript, python, cSharp];
   }
   if (secondChoiceA & secondChoiceB & secondChoiceC) {
-      // Question 2: Checks which choice got selected
+    // Question 2: Checks which choice got selected
     if (document.getElementById('secondChoiceA').checked === true) {
       javaScript = addJava(javaScript, point);
     } else if (document.getElementById('secondChoiceB').checked === true) {
@@ -41,7 +45,7 @@ let cSharp = 0;
     return [javaScript, python, cSharp];
   }
   if (thirdChoiceA & thirdChoiceB & thirdChoiceC) {
-      // Question 3: Checks which choice got selected
+    // Question 3: Checks which choice got selected
     if (document.getElementById('thirdChoiceA').checked === true) {
       javaScript = addJava(javaScript, point);
     } else if (document.getElementById('thirdChoiceB').checked === true) {
@@ -52,7 +56,7 @@ let cSharp = 0;
     return [javaScript, python, cSharp];
   }
   if (fourthChoiceA & fourthChoiceB & fourthChoiceC) {
-      // Question 4: Checks which choice got selected
+    // Question 4: Checks which choice got selected
     if (document.getElementById('fourthChoiceA').checked === true) {
       javaScript = addJava(javaScript, point);
     } else if (document.getElementById('fourthChoiceB').checked === true) {
@@ -63,7 +67,7 @@ let cSharp = 0;
     return [javaScript, python, cSharp];
   }
   if (fifthChoice5A & fifthChoice5B & fifthChoice5C) {
-      // Question 5: Checks which choice got selected
+    // Question 5: Checks which choice got selected
     if (document.getElementById('fifthChoiceA').checked === true) {
       javaScript = addJava(javaScript, point);
     } else if (document.getElementById('fifthChoiceB').checked === true) {
@@ -73,8 +77,8 @@ let cSharp = 0;
     }
     return [javaScript, python, cSharp];
     }
-      // decides which option is best for user
   if (javaScript & python & cSharp) {
+    // decides which option is best for user
     if (javaScript > python && javaScript > cSharp) {
         document.getElementById("answer").innerText = "JavaScript";
     } else if(javaScript > python && javaScript === cSharp) {
@@ -95,4 +99,5 @@ let cSharp = 0;
       document.getElementById("answer").innerText = "C#";
     }
   }
+  document.getElementById("answer").innerText = "JavaScript";
 }
