@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>Programming Language Suggester</title>
-</head>
-<body>
-  <h1>Answer a few questions to determine which language you should learn first...</h1>
-  <div>
-    <h4>Question 1:</h4>
-    <h5>What type of animal do you like best?</h5>
-    <input 
-      type="radio" 
-      id="firstChoiceA" 
-      name="question1" 
-      value="dog"
-      checked />
-    <label for="firstChoiceA">Dogs</label>  
-    <input 
-      type="radio" 
-      id="firstChoiceB" 
-      name="question1" 
-      value="cat"/>
-    <label for="firstChoiceB">Cats</label>
-    <input 
-      type="radio" 
-      id="firstChoiceC" 
-      name="question1" 
-      value="bird"/>
-    <label for="firstChoiceC">Bird</label>
-  </div>
-  <div>
-    <h4>Question 2:</h4>
-    <h5>What type of food would you rather eat?</h5>
-    <input 
-      type="radio" 
-      id="secondChoiceA" 
-      name="question2" 
-      value="meat"
-      checked />
-    <label for="secondChoiceA">Meat</label>
-    <input 
-      type="radio" 
-      id="secondChoiceB" 
-      name="question2" 
-      value="greens"/>
-    <label for="secondChoiceB">Greens</label>
-    <input 
-      type="radio" 
-      id="secondChoiceC" 
-      name="question2" 
-      value="fruit"/>
-    <label for="secondChoiceC">Fruit</label>
-  </div>
-  <div>
-    <h4>Question 3:</h4>
-    <h5>What would you rather do on a weekend?</h5>
-    <input 
-      type="radio" 
-      id="thirdChoiceA" 
-      name="question3" 
-      value="skydive"
-      checked />
-    <label for="thirdChoiceA">Skydive</label>
-    <input 
-      type="radio" 
-      id="thirdChoiceB" 
-      name="question3" 
-      value="read"/>
-    <label for="thirdChoiceB">Read</label>
-    <input 
-      type="radio" 
-      id="thirdChoiceC" 
-      name="question3" 
-      value="sleep"/>
-    <label for="thirdChoiceC">Sleep</label>
-  </div>
-  <div>
-    <h4>Question 4:</h4>
-    <h5>What game would you rather play?</h5>
-    <input 
-      type="radio" 
-      id="fourthChoiceA" 
-      name="question4" 
-      value="minecraft"
-      checked />
-    <label for="fourthChoiceA">Minecraft</label>
-    <input 
-      type="radio" 
-      id="fourthChoiceB" 
-      name="question4" 
-      value="cod"/>
-    <label for="fourthChoiceB">Call of Duty</label>
-    <input 
-      type="radio" 
-      id="fourthChoiceC" 
-      name="question4" 
-      value="nba"/>
-    <label for="fourthChoiceC">NBA 2k</label>
-  </div>
-  <div>
-    <h4>Question 5:</h4>
-    <h5>What movie would you rather watch?</h5>
-    <input 
-      type="radio" 
-      id="fifthChoice5A" 
-      name="question5" 
-      value="lionKing"
-      checked />
-    <label for="fifthChoice5A">Lion King</label>
-    <input 
-      type="radio" 
-      id="fifthChoice5B"
-      name="question5" 
-      value="starWars"/>
-    <label for="fifthChoice5B">Star Wars</label>
-    <input 
-      type="radio" 
-      id="fifthChoice5C"
-      name="question5" 
-      value="strangerThings"/>
-    <label for="fifthChoice5C">Stranger Things</label>
-  <button id="submit">Submit</button>
-  <p><span id="answer"></span></p>
-</body>
+  <div class ="background-color">
+    <head>
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/scripts.js"></script>
+      <title>Programming Language Suggester</title>
+    </head>
+    <body>
+      <h1>Answer a few questions to determine which language you should learn first...</h1>
+      <div>
+        <h4>Question 1:</h4>
+        <h5>What type of animal do you like best?</h5>
+        <input 
+          type="radio" 
+          id="firstChoiceA" 
+          name="question1" 
+          value="dog"
+          checked />
+        <label for="firstChoiceA">Dogs</label>  
+        <input 
+          type="radio" 
+          id="firstChoiceB" 
+          name="question1" 
+          value="cat"/>
+        <label for="firstChoiceB">Cats</label>
+        <input 
+          type="radio" 
+          id="firstChoiceC" 
+          name="question1" 
+          value="bird"/>
+        <label for="firstChoiceC">Bird</label>
+      </div>
+      <div>
+        <h4>Question 2:</h4>
+        <h5>What type of food would you rather eat?</h5>
+        <input 
+          type="radio" 
+          id="secondChoiceA" 
+          name="question2" 
+          value="meat"
+          checked />
+        <label for="secondChoiceA">Meat</label>
+        <input 
+          type="radio" 
+          id="secondChoiceB" 
+          name="question2" 
+          value="greens"/>
+        <label for="secondChoiceB">Greens</label>
+        <input 
+          type="radio" 
+          id="secondChoiceC" 
+          name="question2" 
+          value="fruit"/>
+        <label for="secondChoiceC">Fruit</label>
+      </div>
+      <div>
+        <h4>Question 3:</h4>
+        <h5>What would you rather do on a weekend?</h5>
+        <input 
+          type="radio" 
+          id="thirdChoiceA" 
+          name="question3" 
+          value="skydive"
+          checked />
+        <label for="thirdChoiceA">Skydive</label>
+        <input 
+          type="radio" 
+          id="thirdChoiceB" 
+          name="question3" 
+          value="read"/>
+        <label for="thirdChoiceB">Read</label>
+        <input 
+          type="radio" 
+          id="thirdChoiceC" 
+          name="question3" 
+          value="sleep"/>
+        <label for="thirdChoiceC">Sleep</label>
+      </div>
+      <div>
+        <h4>Question 4:</h4>
+        <h5>What game would you rather play?</h5>
+        <input 
+          type="radio" 
+          id="fourthChoiceA" 
+          name="question4" 
+          value="minecraft"
+          checked />
+        <label for="fourthChoiceA">Minecraft</label>
+        <input 
+          type="radio" 
+          id="fourthChoiceB" 
+          name="question4" 
+          value="cod"/>
+        <label for="fourthChoiceB">Call of Duty</label>
+        <input 
+          type="radio" 
+          id="fourthChoiceC" 
+          name="question4" 
+          value="nba"/>
+        <label for="fourthChoiceC">NBA 2k</label>
+      </div>
+      <div>
+        <h4>Question 5:</h4>
+        <h5>What movie would you rather watch?</h5>
+        <input 
+          type="radio" 
+          id="fifthChoice5A" 
+          name="question5" 
+          value="lionKing"
+          checked />
+        <label for="fifthChoice5A">Lion King</label>
+        <input 
+          type="radio" 
+          id="fifthChoice5B"
+          name="question5" 
+          value="starWars"/>
+        <label for="fifthChoice5B">Star Wars</label>
+        <input 
+          type="radio" 
+          id="fifthChoice5C"
+          name="question5" 
+          value="strangerThings"/>
+        <label for="fifthChoice5C">Stranger Things</label>
+      <button id="submit">Submit</button>
+      <p><span id="answer"></span></p>
+    </div>
+  </body>
 </html>

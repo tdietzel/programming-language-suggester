@@ -74,14 +74,3 @@ function calcLanguage (event) {
 function calcJava(event) {
 
 }
-
-//const firstChoiceA = window.document.querySelector("input#firstChoiceA").value;
-//const firstChoiceB = window.document.querySelector("input#firstChoiceB").value;
-//const secondChoiceA = window.document.querySelector("input#secondChoiceA").value;
-//const secondChoiceB = window.document.querySelector("input#secondChoiceB").value;
-//const thirdChoiceA = window.document.querySelector("input#thirdChoiceA").value;
-//const thirdChoiceB = window.document.querySelector("input#thirdChoiceB").value;
-//const fourthChoiceA = window.document.querySelector("input#fourthChoiceA").value;
-//const fourthChoiceB = window.document.querySelector("input#fourthChoiceB").value;
-//const fifthChoiceA = window.document.querySelector("input#fifthChoiceA").value;
-//const fifthChoiceB = window.document.querySelector("input#fifthChoiceB").value;
