@@ -1,10 +1,11 @@
 window.addEventListener("load", function() {
-  const form = document.getElementById('submit');
-  form.addEventListener("submit",calcLanguage);
+  const form = document.getElementById("submit");
+  form.addEventListener("click",calcLanguage);
 })
 
 let javaScript=0;
 let python=0;
+let cSharp=0;
 let result="";
 
 function calcLanguage (event) {
@@ -12,44 +13,58 @@ function calcLanguage (event) {
 
     // Question 1: Checks which choice got selected
   if (document.getElementById('firstChoiceA').checked === true) {
-    javaScript = 1;
+      javaScript = 1;
   } elseif (document.getElementById('firstChoiceB').checked === true); {
-    python = 1;
-  }
+      python = 1;
+  } elseif (document.getElementById('firstChoiceC').checked === true); {
+      cSharp = 1;
+  } 
 
     // Question 2: Checks which choice got selected
   if (document.getElementById('secondChoiceA').checked === true) {
-    javaScript = 1;
+      javaScript = 1;
   } elseif (document.getElementById('secondChoiceB').checked === true); {
-    python = 1;
+      python = 1;
+  } elseif (document.getElementById('secondChoiceC').checked === true); {
+      cSharp = 1;
   }
 
     // Question 3: Checks which choice got selected
   if (document.getElementById('thirdChoiceA').checked === true) {
-    javaScript = 1;
+      javaScript = 1;
   } elseif (document.getElementById('thirdChoiceB').checked === true); {
-    python = 1;
-  }
+      python = 1;
+  } elseif (document.getElementById('thirdChoiceC').checked === true); {
+      cSharp = 1;
+}
 
     // Question 4: Checks which choice got selected
   if (document.getElementById('fourthChoiceA').checked === true) {
-    javaScript = 1;
+      javaScript = 1;
   } elseif (document.getElementById('fourthChoiceB').checked === true); {
-    python = 1;
+      python = 1;
+  } elseif (document.getElementById('fourthChoiceC').checked === true); {
+      cSharp = 1;
   }
 
     // Question 5: Checks which choice got selected
     if (document.getElementById('fifthChoiceA').checked === true) {
-      javaScript = 1;
+        javaScript = 1;
     } elseif (document.getElementById('fifthChoiceB').checked === true); {
-      python = 1;
+        python = 1;
+    } elseif (document.getElementById('fifthChoiceC').checked === true); {
+        cSharp = 1;
     }
 
-    if (javaScript >= python) {
-    result="java";
-    } elseif (javaScript < python); {
-    result="python";
-    }
+      // Decides which language fits the user best
+    if (javaScript > python && javaScript > cSharp) {
+        result="Java";
+    } elseif (python > javaScript && python > cSharp); {
+        result="Python";
+    } elseif (cSharp > javaScript && cSharp > python); {
+        result="C#";
+      }
+
   document.getElementById("answer").innerText= result;
 }
 
