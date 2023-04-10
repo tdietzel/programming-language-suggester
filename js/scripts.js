@@ -1,4 +1,4 @@
-// Once page is loaded it waits for the submit button to start question1()
+// Once page is loaded it waits for the submit button to start userInput()
 window.addEventListener("load", () => {
   const button = document.getElementById("submit");
   button.addEventListener("click",userInput);
@@ -9,6 +9,7 @@ function userInput(language) {
   language.preventDefault();
   language = 0;
 
+  // Gets the value from selected radio buttons and adds them to language
   Q1 = document.querySelector("input[name=question1]:checked").value;
   language += parseInt(Q1);
   Q2 = document.querySelector("input[name=question2]:checked").value;
@@ -24,6 +25,7 @@ function userInput(language) {
 }
 
 function languageSelector(language) {
+  // calculates which language the user should study and displays it
   if (language < 8) {
     document.getElementById('answer').innerHTML = "Start learning PYTHON!!!";
   } else if (language < 11) {
@@ -37,7 +39,7 @@ function languageSelector(language) {
 
 
 
-
+// OLD CODE!! NOT NEEDED
 
 // window.addEventListener("load", function() {
 //   const form = document.getElementById("submit");
