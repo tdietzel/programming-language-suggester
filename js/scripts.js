@@ -1,11 +1,11 @@
 // Once page is loaded it waits for the submit button to start question1()
 window.addEventListener("load", () => {
   const button = document.getElementById("submit");
-  button.addEventListener("click",question1);
+  button.addEventListener("click",userInput);
 });
 
 // Triggers on submit button
-function question1(language) {
+function userInput(language) {
   language.preventDefault();
   language = 0;
 

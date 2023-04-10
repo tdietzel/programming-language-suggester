@@ -1,5 +1,6 @@
 body {
   background-color:black;
+  padding-left:50px;
 }
 
 #header {
@@ -24,6 +25,11 @@ body {
 
 #question5 {
   color:rgb(15, 220, 243);
+}
+
+h4 {
+  font-style:italic;
+  font-size:large;
 }
 
 #answer {
