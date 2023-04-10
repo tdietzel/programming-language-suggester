@@ -1,4 +1,39 @@
-.background-color {
+body {
+  background-color:black;
+}
+
+#header {
+  color: red;
+}
+
+#question1 {
+  color:rgb(185, 2, 185);
+}
+
+#question2 {
+  color:rgb(57, 11, 208);
+}
+
+#question3 {
+  color:rgb(15, 212, 58);
+}
+
+#question4 {
+  color:rgb(245, 106, 13);
+}
+
+#question5 {
+  color:rgb(15, 220, 243);
+}
+
+#answer {
+  color: yellow;
+  font-style: bold;
+  font-family: Impact;
+  text-align: center;
+}
+
+/* .background-color {
   background-color: black;
   padding-bottom: 350px;
   padding-left:10px;
@@ -45,4 +80,4 @@ h5{
 
 #answer{
   color:red;
-}
+} */
